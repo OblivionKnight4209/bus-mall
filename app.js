@@ -27,6 +27,9 @@ function myImgPool(){
   var random=Math.floor(Math.random()*myImgs.length)
 if (random==0)
 random=1
+//the document.write is creating its own img tag on the html and created the same img three times
+document.write('<img src="'+myImgs[random]+'" border=0>')
+document.write('<img src="'+myImgs[random]+'" border=0>')
 document.write('<img src="'+myImgs[random]+'" border=0>')
 }
 myImgPool()
