@@ -1,23 +1,14 @@
-'use strict'
-var firstImg = document.getElementByClassName('first-img')[0];
-var secImg = document.getElementByClassName('sec-img')[0];
-var thirdImg = document.getElementByClassName('third-img')[0];
-//create a new funcation that is an array that contains all the imgs
-
-//consture function for imgs <---code was shown and proved by Jessica with her permission
-function myImgPool(imageName, path){
+'use strict';
+function Image(imageName, path){
   this.imageName = imageName; // name of each image
   this.path = path; //path where the file lives
   this.timesDisplayed = 0; //starts at 0 because nothing was selected
   this.timesClicked = 0;
-  images.push(images);
-}
-//creating a prototype to do something?
-// myImgPool.prototype.randomNum = function(){
-//   return Math.floor(Math.random()*((this.imageName + 1);
-// }
+  images.push(this);
+};
+  var images = []; //this does something?
 //listing out the products creating new imgs
-  var bag= new Image('img/bag.jpg');
+  var bag = new Image('img/bag.jpg');
   var banana= new Image('img/banana.jpg');
   var bathroom= new Image('img/bathroom.jpg');
   var breakfast= new Image('img/breakfast.jpg');
@@ -26,7 +17,7 @@ function myImgPool(imageName, path){
   var dogDuck= new Image('img/dog-duck.jpg');
   var dragon= new Image('img/dragon.jpg');
   var pen= new Image('img/pen.jpg');
-  var petSweep= new Image('img/pet-sweep/jpg');
+  var petSweep= new Image('img/pet-sweep.jpg');
   var scissors= new Image('img/scissors.jpg');
   var shark= new Image('img/shark.jpg');
   var sweep= new Image('img/sweep.png');
@@ -35,11 +26,58 @@ function myImgPool(imageName, path){
   var usb= new Image('img/usb.gif');
   var waterCan= new Image('img/water-can.jpg');
   var wineGlass= new Image('img/wine-glass.jpg');
-//write to the html img src
-function myRandomImg1(){
- var index = Math.floor(Math.random()*im)
+
+console.log(images);
+
+//need to create a function that randomly creates a number
+
+function randNum() {
+  var selectOne =  
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //global images
+// var firstImg = document.getElementsByClassName('first-img')[0];
+// var secImg = document.getElementsByClassName('sec-img')[0];
+// var thirdImg = document.getElementsByClassName('third-img')[0];
+// //create a new funcation that is an array that contains all the imgs
+//
+// //consture function for imgs <---code was shown and proved by Jessica with her permission
+// //Now I have my set need to creat a function that that will loop for images
+// function createNewImageset(){
+//   var imgSet = [];
+//   var randNum = [];
+//
+//   for (var i = 0; 1 < 3; i++){ //loop i think that creates it three times
+//     randomNum = Math.floor(Math.random() * (image.length - 1));
+//   }
+// }
+//
+// //write to html to show display
+// function showRandomImg(){
+//   document.getElementsByClassName('first-img') = imgSet[0];
+//   document.getElementsByClassName('sec-img') = imgSet[1];
+//   document.getElementsByClassName('third-img') = imgSet[2];
+// };
 
 
 
@@ -102,13 +140,13 @@ function myRandomImg1(){
 //   myImgs[19]="img/water-can.jpg"
 //   myImgs[20]="img/wine-glass.jpg"
 // }
-//   //add a function that will randomly pic an img
+  //add a function that will randomly pic an img
 //   var random=Math.floor(Math.random()*myImgs.length){
 // for (var )
-// //the document.write is creating its own img tag on the html and created the same img three times
+//the document.write is creating its own img tag on the html and created the same img three times
 // document.write('<img src="'+myImgs[random]+'" class=photo1 border=0>')
 // document.write('<img src="'+myImgs[random]+'" class=photo2 border=0>')
 // document.write('<img src="'+myImgs[random]+'" class=photo3 border=0>')
-// }
+//  }
 // myImgPool()
 // //finish the first step.
