@@ -1,4 +1,7 @@
 'use strict';
+  var images = [];//place holder for objects
+  var randNum =[];
+
 function Image(imageName, path){
   this.imageName = imageName; // name of each image
   this.path = path; //path where the file lives
@@ -6,7 +9,6 @@ function Image(imageName, path){
   this.timesClicked = 0;
   images.push(this);
 };
-  var images = []; //this does something?
 //listing out the products creating new imgs
   var bag = new Image('img/bag.jpg');
   var banana= new Image('img/banana.jpg');
@@ -28,12 +30,24 @@ function Image(imageName, path){
   var wineGlass= new Image('img/wine-glass.jpg');
 
 console.log(images);
+console.log(images.length);
 
 //need to create a function that randomly creates a number
 
 function randNum() {
-  var selectOne =  
-}
+  var selectOne = Math.floor((Math.random()* images.length) + 1);
+console.log(selectOne);//can not see the log
+  var selectTwo = Math.floor((Math.random()* images.length) + 1);
+  console.log(selectTwo);
+  var selectThree = Math.floor((Math.random() * images.length) + 1);
+  console.log(selectThree);
+};
+// now that i have consturcter function that brings back the array for images and consturcter for three different random numbers
+// need to create a new one that combies the two
+
+
+//In order to make an image clickable need to set the image to a background image
+
 
 
 
