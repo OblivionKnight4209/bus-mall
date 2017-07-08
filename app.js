@@ -33,13 +33,31 @@ var photoArr = [photo1, photo2, photo3];
 for (var i = 0; i < photoArr.length; i++){
   photoArr[i].src = itemsArr[randomNum()].img;
 }
+
+
 function randomNum() {
   var min = 1;
   var max = 20;
   return Math.floor(Math.random() * (max - min)) + min;
 }
+var clicks = 0;
 
+function numClicks () {
+  var clicksOne = document.getElementById('img1Click');
+  var clicksTwo = document.getElementById('img2Click');
+  var clicksThree = document.getElementById('img3Click');
+    console.log(numClicks());
+}
 
+img1Click.addEventListener('submit', handleClicks);
+img2Click.addEventListener('submit', handleClicks);
+img3Click.addEventListener('submit', handleClicks);
+
+function handleClicks(event){
+  event.preventDefault();
+  clicks++;
+}
+debugger;
 
 
 
