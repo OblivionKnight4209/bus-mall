@@ -4,7 +4,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  background-color: #041D37 ;
+  background-color: black ;
   margin: 0 0 0 0;
   overflow: hidden;
 }
@@ -22,7 +22,7 @@
   left: 0px;
   top: 120px;
   display: block;
-  background-color: #2B4C6F ;
+  background-color: grey ;
 }
 .body {
   width: 960px;
@@ -51,45 +51,25 @@
 #img-cont {
   margin-top: 100px;
 }
-#img1Click {
-  float: left;
-  width: 30%;
-  height: 300px;
-  border-radius: 25px;
-  border: 1px solid black;
-}
-#img2Click {
-  float: left;
-  width: 30%;
-  height: 300px;
-  margin-left: 5%;
-  border-radius: 25px;
-  border: 1px solid black;
-}
-#img3Click {
-  float: right;
-  width: 30%;
-  height: 300px;
-  border-radius: 25px;
-  border: 1px solid black;
-}
 #img1{
   float: left;
-  width: 100%;
+  width: 30%;
   height: 300px;
   border-radius: 25px;
   border: 1px solid black;
 }
 #img2{
   float: left;
-  width: 100%;
+  width: 30%;
   height: 300px;
   border-radius: 25px;
   border: 1px solid black;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 #img3{
   float: left;
-  width: 100%;
+  width: 30%;
   height: 300px;
   border-radius: 25px;
   border: 1px solid black;
